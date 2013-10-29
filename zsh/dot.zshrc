@@ -59,6 +59,7 @@ bindkey "^b" backward-word # Ctrl+b で左に１単語移動
 # ls, #dir, vdir の設定
 alias s='screen -U'
 alias ll='ls -l'
+alias la='ls -la'
 # alias ls='ls --color'
 alias ls='ls -G'
 export LSCOLORS=gxfxcxdxbxegedabagacad
@@ -249,7 +250,7 @@ alias -g W='| wc'
 alias ssh='ssh -o ServerAliveInterval=60'
 
 # alias
-alias e='emacs'
+#alias e='emacs'
 alias h='history'
 alias ha='history-all'
 alias screen='TERM=xterm screen'
