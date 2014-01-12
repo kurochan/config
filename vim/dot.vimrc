@@ -59,6 +59,8 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'cocopon/colorswatch.vim'
+NeoBundle 'rhysd/clever-f.vim'
 filetype plugin indent on
 filetype indent on
 syntax on
