@@ -11,6 +11,7 @@ set softtabstop=0
 set smartindent
 set smarttab
 set smartcase
+set scrolloff=3
 "set formatoptions+=mM
 set hlsearch
 set ambiwidth=double
