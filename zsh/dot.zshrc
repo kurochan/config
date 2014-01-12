@@ -271,5 +271,6 @@ export LANG=en_US.UTF-8
 export PATH=/Applications/UpTeX.app/teTeX/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/kuro/Library/AndroidSDK/platform-tools:$PATH
+export PATH=/Users/kuro/bin:$PATH
 
 eval "$(rbenv init -)"
