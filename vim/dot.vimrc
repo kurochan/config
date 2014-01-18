@@ -19,6 +19,12 @@ set ambiwidth=double
 "colorscheme ron
 colorscheme koehler
 
+augroup HighlightTrailingSpaces
+    autocmd!
+    autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
+    autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
+augroup END
+
 "key remap
 inoremap {<return> {<return>}<up><end><return>
 inoremap if( if()<left>
