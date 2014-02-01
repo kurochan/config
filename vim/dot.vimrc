@@ -68,6 +68,7 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'cocopon/colorswatch.vim'
 NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 'YankRing.vim'
+NeoBundle 'surround.vim'
 filetype plugin indent on
 filetype indent on
 syntax on
