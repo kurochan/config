@@ -21,3 +21,6 @@ ln -s `pwd`/git/dot.gitconfig ~/.gitconfig
 
 echo "link .screenrc"
 ln -s `pwd`/screen/dot.screenrc ~/.screenrc
+
+echo "link Brewfile"
+ln -s `pwd`/homebrew/Brewfile ~/BrewFile

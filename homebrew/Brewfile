@@ -1,0 +1,25 @@
+update
+upgrade
+
+install git
+install wget
+install vim
+install tree
+install htop
+install scala
+install r
+install mosh
+install lv
+install nkf
+install nmap
+install tig
+install gradle
+
+tap caskroom/cask
+install brew-cask
+cask install xquartz
+cask install sequel-pro
+cask install evernote
+cask install rstudio
+
+cleanup
