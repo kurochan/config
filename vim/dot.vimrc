@@ -5,8 +5,8 @@ set number
 set cindent
 set autoindent
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set softtabstop=0
 set smartindent
 set smarttab
@@ -26,11 +26,6 @@ augroup HighlightTrailingSpaces
 augroup END
 
 "key remap
-inoremap {<return> {<return>}<up><end><return>
-inoremap if( if()<left>
-inoremap if() if()<left>
-inoremap for( for(){<return>}<up><end><left><left>
-inoremap for() for(){<return>}<up><end><left><left>
 "delが使えないとき
 "noremap ^H
 "noremap! ^H
