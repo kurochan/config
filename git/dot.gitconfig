@@ -1,10 +1,17 @@
 [user]
 	name = kurochan
 	email = kuro@kurochan.org
+	signingkey = B6936EE7
 [core]
 	editor = vim -c \"set fenc=utf-8\"
 	pager = lv -c
 [color]
-	ui = auto
+	ui = 1
 [push]
 	default = simple
+[help]
+	autocorrect = 1
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true

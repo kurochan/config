@@ -15,6 +15,7 @@ set scrolloff=3
 "set formatoptions+=mM
 set hlsearch
 set ambiwidth=double
+"set mouse=a
 "colorscheme delek
 "colorscheme ron
 colorscheme koehler
@@ -26,6 +27,11 @@ augroup HighlightTrailingSpaces
 augroup END
 
 "key remap
+"inoremap {<return> {<return>}<up><end><return>
+"inoremap if( if()<left>
+"inoremap if() if()<left>
+"inoremap for( for(){<return>}<up><end><left><left>
+"inoremap for() for(){<return>}<up><end><left><left>
 "delが使えないとき
 "noremap ^H
 "noremap! ^H
@@ -66,6 +72,8 @@ NeoBundle 'cocopon/colorswatch.vim'
 NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 'YankRing.vim'
 NeoBundle 'surround.vim'
+"NeoBundle 'ensime/ensime-vim'
+NeoBundle 'derekwyatt/vim-scala'
 filetype plugin indent on
 filetype indent on
 syntax on

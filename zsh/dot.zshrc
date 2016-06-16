@@ -49,9 +49,9 @@ zcompile ~/.zshrc
 #bindkey -e      # emacs キーバインド
 #bindkey -v      # vi キーバインド
 bindkey "^[[5C" forward-word # Ctrl+右矢印キー（→）で右に１単語移動
-bindkey "^f" forward-word # Ctrl+f で右に１単語移動
+# bindkey "^f" forward-word # Ctrl+f で右に１単語移動
 bindkey "^[[5D" backward-word # Ctrl+左矢印キー（←）で左に１単語移動
-bindkey "^b" backward-word # Ctrl+b で左に１単語移動
+# bindkey "^b" backward-word # Ctrl+b で左に１単語移動
 
 ##========================================================##
 ##================= リストの色つけの設定 =================##
@@ -113,7 +113,7 @@ bindkey '^x^p' predict-off   # Cttl+x Ctrl+p で予測オフ
 ##========================================================##
 HISTFILE=$HOME/.zsh_history  # 履歴をファイルに保存する
 HISTSIZE=100000              # メモリ内の履歴の数
-SAVEHIST=100000              # 保存される履歴の数
+SAVEHIST=1000000             # 保存される履歴の数
 setopt extended_history      # 履歴ファイルに開始時刻と経過時間を記録
 #unsetopt extended_history
 setopt append_history        # 履歴を追加 (毎回 .zhistory を作るのではなく)
@@ -261,7 +261,7 @@ alias htmlconv='sed -e "s/</\&lt;/g;s/>/\&gt;/g;s/\t/\&nbsp;\&nbsp;\&nbsp;\&nbsp
 # Acroread の Completion が遅い問題を回避
 _acroread_version='7.0.9'
 alias close='screen -D'
-cd ~
+# cd ~
 export LANG=en_US.UTF-8
 # preexec () {
 #         echo -ne "\ek${1%% *}\e\\"
@@ -270,7 +270,14 @@ export LANG=en_US.UTF-8
 # PATH設定
 export PATH=/Applications/UpTeX.app/teTeX/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH="/usr/local/sbin:$PATH"
 export PATH=/Users/kuro/Library/AndroidSDK/platform-tools:$PATH
 export PATH=/Users/kuro/bin:$PATH
 
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
+
+export SPARK_HOME=/usr/local/share/spark
+export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=512m"
+
+export PATH=$PATH:~/.nodebrew/current/bin
+export BROWSER=chrome
